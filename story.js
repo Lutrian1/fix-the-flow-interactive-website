@@ -8,8 +8,8 @@
 //Omdat die nu op play staat, stopt het audio bestand.
 
 function togglePlayPause() {
-    const pauseButton = document.querySelector('.pausebutton');
-    const playButton = document.querySelector('img:not(.pausebutton)');
+    let pauseButton = document.querySelector('.Pausebutton');
+    let playButton = document.querySelector('img[src="images/Buttons/Playbutton.png"]');
 
     if (pauseButton.style.display === 'none') {
         pauseButton.style.display = 'inline';

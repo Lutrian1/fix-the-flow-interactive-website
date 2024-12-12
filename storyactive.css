@@ -1,50 +1,79 @@
-html{
+
+html {
     height: 100%;
 }
-body{
+
+body {
     background-color: var(--testing-color);
     font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
     margin: 0;
-    display: grid; 
+    display: grid;
     min-height: 100%;
     grid-template-areas: 
-    "header"
-    "main"
-    "footer";
-    header{
+        "header"
+        "main"
+        "footer";
+
+    /* Inline nesting with new CSS */
+    header {
         grid-area: header;
-        .back{
-            height: 50%;
-        }
+        display: flex;
+        align-items: center;
+
     }
-    main{
+
+    main {
         grid-area: main;
-        .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        .video {
             display: flex;
             justify-content: center;
+            margin-bottom: 20px;
         }
-        p{
+
+        p {
             font-family: var(--font-poppins);
             color: var(--general-color);
-            font-size: 12vw;
             text-align: center;
         }
     }
-    footer{
+
+    footer {
         grid-area: footer;
-        .buttons{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0;
+
+        .buttons {
             display: flex;
             justify-content: center;
-            margin-bottom: -20%;
-            .pausebutton{
-                margin-right: 20%;
+            margin-bottom: 20px;
+
+            .pausebutton {
+                margin-right: 20px;
+            }
+
+            .playbutton {
+                display: none;
             }
         }
-        .background{
-            position: absolute; /* maakt niet een eigen containter aan */
+
+        .background {
+            position: absolute;
             width: 100%;
+            height: 200px; 
+            bottom: 0;
+            left: 0;
             z-index: -1;
+            background-size: cover;
         }
     }
 }
-
