@@ -1,0 +1,50 @@
+html{
+    height: 100%;
+}
+body{
+    background-color: var(--testing-color);
+    font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+    margin: 0;
+    display: grid; 
+    min-height: 100%;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    header{
+        grid-area: header;
+        .back{
+            height: 50%;
+        }
+    }
+    main{
+        grid-area: main;
+        .video{
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            font-family: var(--font-poppins);
+            color: var(--general-color);
+            font-size: 12vw;
+            text-align: center;
+        }
+    }
+    footer{
+        grid-area: footer;
+        .buttons{
+            display: flex;
+            justify-content: center;
+            margin-bottom: -20%;
+            .pausebutton{
+                margin-right: 20%;
+            }
+        }
+        .background{
+            position: absolute; /* maakt niet een eigen containter aan */
+            width: 100%;
+            z-index: -1;
+        }
+    }
+}
+
