@@ -14,12 +14,11 @@ body {
         "main"
         "footer";
 
-    /* Inline nesting with new CSS */
     header {
         grid-area: header;
         display: flex;
         align-items: center;
-
+        /* Zet pijlje in het midden */
     }
 
     main {
@@ -39,6 +38,8 @@ body {
         p {
             font-family: var(--font-poppins);
             color: var(--general-color);
+            margin: 0;
+            font-size: 50px;
             text-align: center;
         }
     }
@@ -58,9 +59,8 @@ body {
             margin-bottom: 20px;
 
             .pausebutton {
-                margin-right: 20px;
+                margin-right: 80px;
             }
-
             .playbutton {
                 display: none;
             }
@@ -68,12 +68,19 @@ body {
 
         .background {
             position: absolute;
-            width: 100%;
+            width: 110%;
             height: 200px; 
+            left: -10%;
             bottom: 0;
-            left: 0;
             z-index: -1;
             background-size: cover;
+            /* Omdat dit absolute is, gebruik left en bottom voor positioning*/
+        }
+
+        button{
+            all: unset; /* verwijderd button styling */
+            cursor: pointer;
+            /* laat het cklikken */
         }
     }
 }
