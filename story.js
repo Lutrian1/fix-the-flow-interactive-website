@@ -1,8 +1,16 @@
-// Selecteer de play knop (zal een img zijn, dus dan class "playknop" in dit geval)
-    let pauseButton = document.querySelector('.pausebutton');
-//Maak het clickable, dus dat je erop kan klikken
-    pauseButton.addEventListener('click', function() {
-//Na het klikken veranderd die van play naar pauze
-           alert('Het werkt!');
-        });
-//Omdat die nu op play staat, stopt het audio bestand.
+// Selecteer knop
+let pauseButton = document.querySelector('.pausebutton');
+
+// Event listener voor de pauseknop click
+pauseButton.addEventListener('click', function() {
+    // Verberg de pauseknop en toon de playknop
+    pauseButton.style.display = 'none'; // Verbergt de pauseknop
+    playButton.style.display = 'block'; // Toont de playknop
+});
+
+// Event listener voor de playknop click
+playButton.addEventListener('click', function() {
+    // Verberg de playknop en toon de pauseknop
+    playButton.style.display = 'none'; // Verbergt de playknop
+    pauseButton.style.display = 'block'; // Toont de pauseknop 
+});

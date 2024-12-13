@@ -63,6 +63,13 @@ body {
             }
             .playbutton {
                 display: none;
+                margin-right: 80px; /* behoud margin */
+            }
+
+            button{
+                all: unset; /* verwijderd button styling */
+                cursor: pointer;
+                /* laat het cklikken */
             }
         }
 
@@ -75,12 +82,6 @@ body {
             z-index: -1;
             background-size: cover;
             /* Omdat dit absolute is, gebruik left en bottom voor positioning*/
-        }
-
-        button{
-            all: unset; /* verwijderd button styling */
-            cursor: pointer;
-            /* laat het cklikken */
         }
     }
 }
