@@ -1,5 +1,6 @@
 // Selecteer knop
 let pauseButton = document.querySelector('.pausebutton');
+let playButton = document.querySelector('.playbutton');
 
 // Event listener voor de pauseknop click
 pauseButton.addEventListener('click', function() {
