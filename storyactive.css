@@ -75,9 +75,9 @@ body {
 
         .background {
             position: absolute;
-            width: 110%;
+            width: 110%; /* 110% omdat hij een klein lijntje aan de zijkant had */
             height: 200px; 
-            left: -10%;
+            left: -10%; /* die hier word verwijderd */
             bottom: 0;
             z-index: -1;
             background-size: cover;
