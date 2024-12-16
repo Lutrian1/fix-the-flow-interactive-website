@@ -13,38 +13,37 @@ body {
         "header"
         "main"
         "footer";
+}
+header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    /* Zet pijlje in het midden */
+}
 
-    header {
-        grid-area: header;
-        display: flex;
-        align-items: center;
-        /* Zet pijlje in het midden */
-    }
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 
-    main {
-        grid-area: main;
+    .video {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
-
-        .video {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-family: var(--font-poppins);
-            color: var(--general-color);
-            margin: 0;
-            font-size: 50px;
-            text-align: center;
-        }
+        margin-bottom: 20px;
     }
 
-    footer {
+    .subtitle {
+        font-family: var(--font-poppins);
+        color: var(--general-color);
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+footer {
         grid-area: footer;
         position: relative;
         display: flex;
@@ -60,27 +59,34 @@ body {
 
             .pausebutton {
                 margin-right: 80px;
+                background: none;
+                border: none;
             }
             .playbutton {
                 margin-right: 80px; /* behoud margin */
+                background: none;
+                border: none;
             }
-
-            button{
-                all: unset; /* verwijderd button styling */
-                cursor: pointer;
-                /* laat het cklikken */
+            .buttons button {
+                all: unset; /* Reset alle standaard browserstijlen */
+                cursor: pointer; /* Maak de knop klikbaar */
+                border: none;
             }
+            
+            .buttons button[hidden] {
+                display: none; /* Verberg knoppen als ze de hidden-status hebben */
+            }
+            
         }
 
         .background {
-            position: absolute;
-            width: 110%; /* 110% omdat hij een klein lijntje aan de zijkant had */
-            height: 200px; 
-            left: -10%; /* die hier word verwijderd */
-            bottom: 0;
-            z-index: -1;
-            background-size: cover;
-            /* Omdat dit absolute is, gebruik left en bottom voor positioning*/
-        }
+        position: absolute;
+        width: 110%; /* 110% omdat hij een klein lijntje aan de zijkant had */
+        height: 200px; 
+        left: -10%; /* die hier word verwijderd */
+        bottom: 0;
+        z-index: -1;
+        background-size: cover;
+        /* Omdat dit absolute is, gebruik left en bottom voor positioning*/
     }
 }

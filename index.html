@@ -13,28 +13,26 @@
         <img src="/images/Buttons/back.png" href="validatie.html" alt="Back" class="back">
     </header>
     <main class="content">
-        <section class="videoplayer">
-            <video width="70%" controls autoplay>
-            <source src="video/testvid.mp4" type="video/mp4">
+        <video id="myVideo" src="video/testvid.mp4" type="video/mp4" width="300" muted>
+            <track id="subtitleTrack" kind="subtitles" label="English" src="/verhaaltje.vtt" srclang="en"> <!--Geen default zodat alleen de subtiltes eronder komen, muted zodat de video uit staat-->
             Your browser does not support the video tag.
-            </video>
-            <audio controls autoplay> <!--Speelt meteen de audio-->
-                <source src="taalverhalen/ENGELS - IT WAS 8 O_CLOCK - DIMPHY.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
-        <p class="text1">
-            The wild foxes jump over the hedge into the forest
-        </p>
+        </video>
+        <p id="subtitleContainer" class="subtitle"></p>
+        <audio src="taalverhalen/ENGELS - IT WAS 8 O_CLOCK - DIMPHY.mp3" type="audio/mp3"> <!--moet meteen audio spelen-->
+            Your browser does not support the audio element.
+        </audio>
     </main>
     <footer class="playnavigation">
         <div class="buttons">
             <button class="pausebutton">
                 <img src="images/Buttons/Pausebutton.png" alt="Pause">
+            </button>
             <button hidden class="playbutton">
                 <img src="images/Buttons/Playbutton.png" alt="Play">
+            </button>
             <button class="volumebutton">
                 <img src="images/Buttons/Volumebutton.png" alt="Volume">
+            </button>
         </div>
         <img src="images/clouds.png" alt="" class="background">
     </footer>
