@@ -30,8 +30,8 @@ main {
     text-align: center;
 
     #myVideo{
-        display: flex;
-        justify-content: center;
+        position: fixed;
+        bottom: 60%;
         margin-bottom: 50px;
     }
 
