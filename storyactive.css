@@ -79,11 +79,60 @@ footer {
                 cursor: pointer; /* Maak de knop klikbaar */
                 border: none;
             }
+
+            img:hover {
+                all: unset; /* Reset alle standaard browserstijlen */
+                cursor: pointer; /* Maak de knop klikbaar */
+                border: none;
+                filter: grayscale(50%); /* Veranderen van kleur */
+                transition: ease-in-out;
+            }
             
             .buttons button[hidden] {
                 display: none; /* Verberg knoppen als ze de hidden-status hebben */
             }
+
+            .volumeslider {
+                width: 150px; 
+                appearance: none; /* Verwijder default styles */
+                height: 5px;
+                background: var(--general-color); /* Thema kleur */
+                outline: none;
+                position: absolute; 
+                bottom: 50px; /* Net onder buttons */
+                left: 50%; 
+                transform: translateX(-50%);
+                z-index: 1;
+            }
             
+            .volumeslider::-webkit-slider-thumb { /*https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/*/
+                appearance: none; 
+                width: 15px;
+                height: 15px;
+                border-radius: 50%; /* maak het uiteinde rond */
+                background: var(--general-color); /* Use your theme color */
+                cursor: pointer;
+            }     
+            
+            .timeslider {
+                width: 300px; /* Adjust the width of the slider */
+                appearance: none;
+                height: 8px;
+                background: #ddd; /* Background track color */
+                position: absolute; 
+                bottom: 90px; /* Net onder buttons */
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            .timeslider::-webkit-slider-thumb {
+                appearance: none;
+                width: 15px;
+                height: 15px;
+                background: var(--general-color); 
+                border-radius: 50%;
+                cursor: pointer;
+            }
         }
 
         .background {
