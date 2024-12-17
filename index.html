@@ -6,6 +6,7 @@
     <!--Link naar algemene styleguide-->
     <link rel="stylesheet" href="https://kitkatisvibing.github.io/look-and-feel-styleguide/tumimundo.css">
     <link rel="stylesheet" href="storyactive.css">
+    <link rel="stylesheet" href="">
     <title>Storyactive</title>
 </head>
 <body>
@@ -13,12 +14,13 @@
         <img src="/images/Buttons/back.png" href="validatie.html" alt="Back" class="back">
     </header>
     <main class="content">
-        <video id="myVideo" src="video/testvid.mp4" type="video/mp4" width="300" muted>
-            <track id="subtitleTrack" kind="subtitles" label="English" src="/verhaaltje.vtt" srclang="en"> <!--Geen default zodat alleen de subtiltes eronder komen, muted zodat de video uit staat-->
+        <video id="myVideo" src="video/testvid.mp4" type="video/mp4" width="300" muted> 
             Your browser does not support the video tag.
         </video>
         <p id="subtitleContainer" class="subtitle"></p>
-        <audio src="taalverhalen/ENGELS - IT WAS 8 O_CLOCK - DIMPHY.mp3" type="audio/mp3"> <!--moet meteen audio spelen-->
+        <audio src="taalverhalen/ENGELS - IT WAS 8 O_CLOCK - DIMPHY.mp3" type="audio/mp3">  <!--Geen default zodat alleen de subtiltes eronder komen, muted zodat de video uit staat-->
+            <track id="subtitleTrack" kind="subtitles" label="English" src="/verhaaltje.vtt" srclang="en">
+            <!--moet meteen audio spelen-->
             Your browser does not support the audio element.
         </audio>
     </main>
