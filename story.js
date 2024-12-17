@@ -26,28 +26,6 @@ playButton.addEventListener('click', function () {
     videoDing.play();
 });
 
-// Event listener voor de volume click
-pauseButton.addEventListener('click', function () {
-    // Verberg de pauseknop en toon de playknop
-    pauseButton.hidden = true; // Verberg de pauseknop
-    playButton.hidden = false; // Toon de playknop
-
-    // Zet audio en video op pauze
-    audioDing.pause();
-    videoDing.pause();
-});
-
-// Event listener voor de playknop click
-playButton.addEventListener('click', function () {
-    // Verberg de playknop en toon de pauseknop
-    playButton.hidden = true; // Verberg de playknop
-    pauseButton.hidden = false; // Toon de pauseknop
-
-    // Start audio en video
-    audioDing.play();
-    videoDing.play();
-});
-
 // story.js
 document.addEventListener("DOMContentLoaded", () => {
     const video = document.getElementById('myVideo');
