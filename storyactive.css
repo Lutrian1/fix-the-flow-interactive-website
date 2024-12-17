@@ -29,10 +29,10 @@ main {
     justify-content: center;
     text-align: center;
 
-    .video {
+    #myVideo{
         display: flex;
         justify-content: center;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .subtitle {
@@ -40,6 +40,7 @@ main {
         color: var(--general-color);
         font-size: 50px;
         text-align: center;
+        margin: 0;
     }
 }
 
