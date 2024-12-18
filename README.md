@@ -34,16 +34,18 @@ Feedback: Veranderd van kleur tijdens hoveren, Eenmaal na klikken ga je naar de 
 
 #### Video van interactie:
 
+
+https://github.com/user-attachments/assets/c2c6cdfe-0848-48c6-8798-c18a2cb0242e
+
+
 ### User test
 
 Tijdens het testen van de volume knop, leken mensen vooral te neigen naar dat dit het geluid zou muten en weer unmuten. Pas na erop klikken zagen mensen dat het een slider was.
 
 Een kleine tip tijdens de user-test: Mensen klikken vaak weer ergens op het scherm om de slider weer te verwijderen, en vaak zagen ze deze niet helemaal. Mis dus een interactie toevoegen waarbij alleen tikken op het scherm weer nodig is, evenals weer klikken op de button.
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
-<!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
+
+- Mobile first: Met mobile first heb ik dit keer niet gewerkt met media queries, maar ik heb alles absolute units gegeven. Units als '%' of 'vh' enzovoort.
 
 ## Bronnen
