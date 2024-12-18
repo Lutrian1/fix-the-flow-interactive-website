@@ -15,9 +15,10 @@ body {
         "footer";
 }
 header {
+    position: fixed;
+    top: 5%;
+    left: 2%;
     grid-area: header;
-    display: flex;
-    align-items: center;
     /* Zet pijlje in het midden */
 }
 
@@ -108,7 +109,7 @@ footer {
                 transform: translateX(-50%);
                 z-index: 1;
             }
-            
+            /*Stijlen van webkit ofterwijl de standaard kleuren van HTMLK audio aapassen*/
             .volumeslider::-webkit-slider-thumb { /*https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/*/
                 appearance: none; 
                 width: 15px;
