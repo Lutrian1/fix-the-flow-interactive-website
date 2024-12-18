@@ -60,4 +60,6 @@ Een kleine tip tijdens de user-test: Mensen klikken vaak weer ergens op het sche
 
 - In css worden de buttons als niks gestyld, en worden de images binnen deze buttons geplaatst, zodat de functie van de button word behouden.
 
+- Gebruik van grid areas voor een goede flow.
+
 ## Bronnen
