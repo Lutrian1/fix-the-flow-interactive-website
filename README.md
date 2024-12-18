@@ -23,13 +23,19 @@ Feedback: Wisselt van kleur en schakelt daarna door naar de pauze knop, andersom
 
 Feedback: Opent een slider die het mogelijk maakt om van volume te wisselen. 
 
-De back button 
+#### De back button 
+
 <img width="282" alt="image" src="https://github.com/user-attachments/assets/616ee160-eb55-455f-a10f-890a52b8ddb7" />
 <img width="88" alt="image" src="https://github.com/user-attachments/assets/bfbb81fb-4c56-46ed-9621-b5438ffe0a02" />
+
 - De back button: De button zorgt ervoor dat je een ander verhaaltje kan kiezen
 
 Feedback: Veranderd van kleur tijdens hoveren, Eenmaal na klikken ga je naar de vorige pagina.
+
+#### Video van interactie:
+
 ### User test
+
 Tijdens het testen van de volume knop, leken mensen vooral te neigen naar dat dit het geluid zou muten en weer unmuten. Pas na erop klikken zagen mensen dat het een slider was.
 
 Een kleine tip tijdens de user-test: Mensen klikken vaak weer ergens op het scherm om de slider weer te verwijderen, en vaak zagen ze deze niet helemaal. Mis dus een interactie toevoegen waarbij alleen tikken op het scherm weer nodig is, evenals weer klikken op de button.
