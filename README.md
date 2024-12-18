@@ -15,11 +15,11 @@ Drie belangrijke buttons bepalen de interactie tussen de gebruiker en de site.
 
 <img width="204" alt="image" src="https://github.com/user-attachments/assets/02096882-2ed5-46e0-8324-86664c40c180" />
 
-De play/pause button: De play/pause button speelt de audio/tekst zodat de gebruiker het verhaaltje op stop kan zetten wanneer zij/hij vind dat dat nodig is. 
+- De play/pause button: De play/pause button speelt de audio/tekst zodat de gebruiker het verhaaltje op stop kan zetten wanneer zij/hij vind dat dat nodig is. 
 
 Feedback: Wisselt van kleur en schakelt daarna door naar de pauze knop, andersom kan je dus weer hierop klikken om weer terug te wisselen naar de play knop. Daarnaast stopt het dus en speelt het de tekst.
 
-De volume knop: Met het klikken op de volume knop opent de browser een slider, die het geluid van de browser aanpast. 
+-De volume knop: Met het klikken op de volume knop opent de browser een slider, die het geluid van de browser aanpast. 
 
 Feedback: Opent een slider die het mogelijk maakt om van volume te wisselen. 
 
