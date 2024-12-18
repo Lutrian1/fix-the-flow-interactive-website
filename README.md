@@ -46,6 +46,18 @@ Een kleine tip tijdens de user-test: Mensen klikken vaak weer ergens op het sche
 
 ## Kenmerken
 
-- Mobile first: Met mobile first heb ik dit keer niet gewerkt met media queries, maar ik heb alles absolute units gegeven. Units als '%' of 'vh' enzovoort.
+- Mobile first: Met mobile first heb ik dit keer niet gewerkt met media queries, maar ik heb alles absolute units gegeven. Units als '%' of 'vh' enzovoort. Vele componenten hadden ook
+  een absolute of fixed potition waarbij ik bijvoorbeeld top en bottom gebruik.
+  
+> header {
+    position: fixed;
+    top: 5%;
+    left: 2%;
+    grid-area: header;
+}
+
+- In javascript wisselt hij tussen de hidden en niet hidden state, hij zet deze tussen true en false.
+
+- In css worden de buttons als niks gestyld, en worden de images binnen deze buttons geplaatst, zodat de functie van de button word behouden.
 
 ## Bronnen
