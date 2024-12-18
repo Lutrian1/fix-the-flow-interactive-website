@@ -61,6 +61,7 @@ footer {
             display: flex;
             justify-content: center;
             margin-bottom: 20px;
+            cursor: pointer; /* Maak de knop klikbaar */
 
             .volumebutton{
                 background: none;
@@ -76,12 +77,6 @@ footer {
             .playbutton {
                 margin-right: 80px; /* behoud margin */
                 background: none;
-                border: none;
-            }
-            
-            .buttons button {
-                all: unset; /* Reset alle standaard browserstijlen */
-                cursor: pointer; /* Maak de knop klikbaar */
                 border: none;
             }
 
